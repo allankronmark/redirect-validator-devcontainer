@@ -13,8 +13,7 @@ I want to refactor the whole solution and hopefully make it into a Chrome Extens
 ## Here's a few tips:
 - Exposed ports are:
    - 8000
-- `"postCreateCommand": "php -S 0.0.0.0:8000"` has been added to devcontainer.json which automatically starts the server when the devcontainer is created.
-- You can (of course) start the php service yourself by running `php -S 0.0.0.0:8000` in the terminal.
+- In the terminal, run `php -S 0.0.0.0:8000` to start the app.
 - OPCache has been disabled globally _AND_ in the check.php script.
 
 ---

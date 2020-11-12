@@ -27,7 +27,6 @@
 	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	//"postCreateCommand": "php -v",
-	"postCreateCommand": "php -S 0.0.0.0:8000",
 	// Comment out to connect as root instead.
 	"remoteUser": "vscode"
 }

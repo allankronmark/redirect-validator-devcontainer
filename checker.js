@@ -27,10 +27,26 @@
 		 //jQuery loaded
 		 console.log('jquery loaded');
 		 addCSS();
-		 addLinkChecker();
-		 var dl = document.location;
+		addLinkChecker();
+		// Populating a couple of test rows
+/* 		 var dl = document.location;
 		 var testrow = dl+','+dl+'\n';
-		 $('#source').val( testrow + testrow + testrow + testrow + testrow + testrow + testrow + testrow + testrow + testrow );
+		 $('#source').val( testrow + testrow + testrow + testrow + testrow + testrow + testrow + testrow + testrow + testrow ); */
+		
+		// Let's populate with more meaningful testrows
+		var testrows = [
+			'https://apple.dk/,https://www.apple.com/dk/',
+			'https://apple.dk/mac/,https://www.apple.com/dk/mac/',
+			'https://apple.dk/Mac/,https://www.apple.com/dk/mac/',
+			'https://apple.dk/Mac/,https://www.apple.com/dk/mac/',
+			'https://apple.dk/MAC/,https://www.apple.com/dk/mac/',
+			'https://www.apple.dk/,https://www.apple.com/dk/',
+			'https://www.apple.dk/mac/,https://www.apple.com/dk/mac/',
+			'https://www.apple.dk/Mac/,https://www.apple.com/dk/mac/',
+			'https://www.apple.dk/Mac/,https://www.apple.com/dk/mac/',
+			'https://www.apple.dk/MAC/,https://www.apple.com/dk/mac/',
+		].join('\n');
+		$('#source').val(testrows);
 		 $('#validate').click(function(){
 			validateRedirects();
 		 });
